@@ -1,0 +1,20 @@
+version: '3.3'
+services:
+  docker-nodejs-tutorial:
+    image: neversaynever0502/node-web-app
+    build: .
+    depends_on:
+      - db
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:8080
+    volumes:
+      - .:/usr/src/app
+  db:
+    image: postgres:9.6.8-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
