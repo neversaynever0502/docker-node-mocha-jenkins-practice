@@ -25,6 +25,7 @@ var Sequelize = require('sequelize');
 // Constants
 const PORT = 3000;
 const HOST = '0.0.0.0';
+//hello test
 
 // App
 const app = express();
