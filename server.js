@@ -4,22 +4,22 @@ const express = require('express');
 var Sequelize = require('sequelize');
 
 
-const Op = Sequelize.Op;
-var sequelize = new Sequelize('postgres', 'postgres', 'password', {
-  host : 'db', 
-  port : '5432', 
-  dialect : 'postgres',
-  operatorsAliases: Op,
-});
+// const Op = Sequelize.Op;
+// var sequelize = new Sequelize('postgres', 'postgres', 'password', {
+//   host : 'db', 
+//   port : '5432', 
+//   dialect : 'postgres',
+//   operatorsAliases: Op,
+// });
 
-sequelize
-.authenticate()
-.then(() => {
-  console.log('Connection has been established successfully.');
-})
-.catch(err => {
-  console.error('Unable to connect to the database:', err);
-});
+// sequelize
+// .authenticate()
+// .then(() => {
+//   console.log('Connection has been established successfully.');
+// })
+// .catch(err => {
+//   console.error('Unable to connect to the database:', err);
+// });
 
 
 // Constants
