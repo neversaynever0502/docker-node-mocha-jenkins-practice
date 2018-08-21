@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
   // res.send('Hello world\n');
   res.json({text:'hello'})
 });
-// listen
+// listen ~
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}=>NODE_ENV:${process.env.NODE_ENV}`);
